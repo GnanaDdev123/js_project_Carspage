@@ -181,23 +181,18 @@
                         bookButton.innerHTML = "Book";
                         detailsDiv.appendChild(bookButton);
 
-                        // Event listener for Book button
                         bookButton.addEventListener("click", function () {
-                            // Store car ID and name to local storage
                             localStorage.setItem("car_id", car.id);
                             localStorage.setItem("car_name", car.name);
 
-                            // Redirect to car booking page
-                            document.location.assign("./car-booking.html");
+                            document.location.assign("https://gnanaddev123.github.io/booking_page/");
                         });
 
                         div1.appendChild(carDiv);
                         div1.appendChild(detailsDiv);
                         carContainer.appendChild(div1);
 
-                        // Adjust size of selected car
                         div1.addEventListener("click", function () {
-                            // Reset all car sizes
                             document.querySelectorAll(".car").forEach(car => {
                                 car.style.height = "310px";
                                 car.style.width = "420px";
@@ -205,7 +200,6 @@
 
                             });
 
-                            // Increase size of clicked car
                             div1.style.height = "450px";
                             div1.style.width = "550px";
                             image.style.height = "200px"
