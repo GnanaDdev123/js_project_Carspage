@@ -36,7 +36,7 @@
 
         .details {
             width: 40%;
-            hight: 100%
+            hight: %
             display: flex;
             justify-content: center;
             align-items: center;
@@ -68,7 +68,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            row-gap: 30px;
+            row-gap: 10px;
             padding-top: 40px;
             padding-bottom: 30px;
         }
@@ -140,6 +140,7 @@
                         let detailsDiv = document.createElement("div");
                         detailsDiv.classList.add("details");
                         detailsDiv.style.width = "40%";
+                        detailsDiv.style.height = "90%"
                         detailsDiv.style.display = "flex";
                         detailsDiv.style.justifyContent = "center";
                         detailsDiv.style.alignItems = "center";
